@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-const PostAuthenticationsPayloadSchema = Joi.object({
+const PostAuthenticationPayloadSchema = Joi.object({
   username: Joi.string().required(),
   password: Joi.string().required(),
 });
@@ -14,7 +14,7 @@ const DeleteAuthenticationPayloadSchema = Joi.object({
 });
 
 module.exports = {
-  PostAuthenticationsPayloadSchema,
+  PostAuthenticationPayloadSchema,
   PutAuthenticationPayloadSchema,
   DeleteAuthenticationPayloadSchema,
 };
